@@ -55,8 +55,9 @@ A structured overview suitable for dashboards or further automation.
 - `draft_path`
 - `error` (if any)
 
-📸 **Screenshot placeholder:**  
-*(Insert screenshot of the CSV opened in Excel / Sheets)*
+📸 **Triaged_results.csv:**  
+<img width="1873" height="322" alt="image" src="https://github.com/user-attachments/assets/93bd6ffd-d444-42ca-b219-d9f1e2613623" />
+
 
 ---
 
@@ -68,8 +69,9 @@ Each non-spam email gets its own draft file containing:
 - AI analysis summary
 - **DRAFT REPLY** section (clearly marked)
 
-📸 **Screenshot placeholder:**  
-*(Insert screenshot of a draft .txt file)*
+📸 **Draft.txt:**  
+<img width="715" height="372" alt="image" src="https://github.com/user-attachments/assets/79391646-2526-46f0-8063-efc56421f3ec" />
+
 
 ---
 
