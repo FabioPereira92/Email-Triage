@@ -1,0 +1,8 @@
+Subject: You won a prize!
+From: spammy@unknown.xyz
+Category: Spam
+Urgency: Low
+Summary: The email appears to be a spam message claiming a prize that was not won. It is likely a phishing attempt.
+
+DRAFT REPLY:
+Thank you for your email. However, we cannot assist with claims related to unsolicited messages like this one. Please be cautious and avoid clicking on unknown links.

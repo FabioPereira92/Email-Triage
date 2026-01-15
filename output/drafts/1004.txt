@@ -1,0 +1,8 @@
+Subject: Interested in volume pricing
+From: mike.sales@vendor.com
+Category: SalesLead
+Urgency: Medium
+Summary: Mike is inquiring about enterprise pricing and SLA details for a team of 50. This suggests a potential sales opportunity.
+
+DRAFT REPLY:
+Hi Mike, thank you for your interest in our product. I’d be happy to provide you with our enterprise pricing and SLA details. Please allow me some time to gather this information, and I will follow up shortly.

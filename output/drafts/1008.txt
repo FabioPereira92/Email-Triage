@@ -1,0 +1,8 @@
+Subject: Very unhappy with support
+From: angry@client.org
+Category: Other
+Urgency: High
+Summary: The client is frustrated due to a delay in support resolution. They are requesting to speak with a manager.
+
+DRAFT REPLY:
+Dear Client, I sincerely apologize for the delay in resolving your issue. I understand how frustrating this must be, especially with your project timeline. I will escalate your concern to a manager immediately to ensure you receive prompt assistance. Thank you for your patience.

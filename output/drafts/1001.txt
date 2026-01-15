@@ -1,0 +1,8 @@
+Subject: Refund request - order #A123
+From: jane.doe@example.com
+Category: Billing
+Urgency: High
+Summary: Jane has reported being charged twice for order A123 and is requesting a refund for the duplicate charge. She has attached her receipt for reference.
+
+DRAFT REPLY:
+Hi Jane, thank you for reaching out. I apologize for the inconvenience caused by the duplicate charge. We will verify the details and process your refund for the duplicate charge shortly. Thank you for providing your receipt. Best regards, Acme Support.

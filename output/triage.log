@@ -1,0 +1,82 @@
+2026-01-15 11:17:19,820 INFO: Starting ai_inbox_triage
+2026-01-15 11:17:19,820 INFO: Input: ai_inbox_triage\sample_emails.csv
+2026-01-15 11:17:19,820 INFO: Output: output
+2026-01-15 11:17:19,820 INFO: Dry run: False
+2026-01-15 11:17:19,821 INFO: Model: gpt-4o-mini
+2026-01-15 11:17:19,821 ERROR: OPENAI_API_KEY is not set in environment; cannot run in real mode.
+2026-01-15 11:19:49,062 INFO: Starting ai_inbox_triage
+2026-01-15 11:19:49,062 INFO: Input: ai_inbox_triage\sample_emails.csv
+2026-01-15 11:19:49,063 INFO: Output: output
+2026-01-15 11:19:49,063 INFO: Dry run: False
+2026-01-15 11:19:49,063 INFO: Model: gpt-4o-mini
+2026-01-15 11:19:49,064 ERROR: OPENAI_API_KEY is not set in environment; cannot run in real mode.
+2026-01-15 11:21:51,176 INFO: Starting ai_inbox_triage
+2026-01-15 11:21:51,176 INFO: Input: ai_inbox_triage\sample_emails.csv
+2026-01-15 11:21:51,177 INFO: Output: output
+2026-01-15 11:21:51,177 INFO: Dry run: False
+2026-01-15 11:21:51,177 INFO: Model: gpt-4o-mini
+2026-01-15 11:21:51,177 ERROR: OPENAI_API_KEY is not set in environment; cannot run in real mode.
+2026-01-15 11:22:21,293 INFO: Starting ai_inbox_triage
+2026-01-15 11:22:21,293 INFO: Input: ai_inbox_triage\sample_emails.csv
+2026-01-15 11:22:21,293 INFO: Output: output
+2026-01-15 11:22:21,294 INFO: Dry run: False
+2026-01-15 11:22:21,294 INFO: Model: gpt-4o-mini
+2026-01-15 11:22:21,294 ERROR: OPENAI_API_KEY is not set in environment; cannot run in real mode.
+2026-01-15 11:24:26,103 INFO: Starting ai_inbox_triage
+2026-01-15 11:24:26,104 INFO: Input: ai_inbox_triage\sample_emails.csv
+2026-01-15 11:24:26,104 INFO: Output: output
+2026-01-15 11:24:26,104 INFO: Dry run: False
+2026-01-15 11:24:26,104 INFO: Model: gpt-4o-mini
+2026-01-15 11:24:26,105 ERROR: OPENAI_API_KEY is not set in environment; cannot run in real mode.
+2026-01-15 11:31:38,302 INFO: Starting ai_inbox_triage
+2026-01-15 11:31:38,303 INFO: Input: ai_inbox_triage\sample_emails.csv
+2026-01-15 11:31:38,303 INFO: Output: output
+2026-01-15 11:31:38,303 INFO: Dry run: False
+2026-01-15 11:31:38,304 INFO: Model: gpt-4o-mini
+2026-01-15 11:31:38,304 ERROR: OPENAI_API_KEY is not set; set it in your environment or IDE run configuration.
+2026-01-15 11:36:09,475 INFO: Starting ai_inbox_triage
+2026-01-15 11:36:09,476 INFO: Input: ai_inbox_triage\sample_emails.csv
+2026-01-15 11:36:09,476 INFO: Output: output
+2026-01-15 11:36:09,476 INFO: Dry run: False
+2026-01-15 11:36:09,477 INFO: Model: gpt-4o-mini
+2026-01-15 11:36:09,477 ERROR: OPENAI_API_KEY is not set; set it in your environment or IDE run configuration.
+2026-01-15 11:37:17,866 INFO: Starting ai_inbox_triage
+2026-01-15 11:37:17,867 INFO: Input: ai_inbox_triage\sample_emails.csv
+2026-01-15 11:37:17,867 INFO: Output: output
+2026-01-15 11:37:17,867 INFO: Dry run: False
+2026-01-15 11:37:17,868 INFO: Model: gpt-4o-mini
+2026-01-15 11:37:17,868 ERROR: OPENAI_API_KEY is not set; set it in your environment or IDE run configuration.
+2026-01-15 11:47:33,934 INFO: Starting ai_inbox_triage
+2026-01-15 11:47:33,935 INFO: Input: ai_inbox_triage\sample_emails.csv
+2026-01-15 11:47:33,935 INFO: Output: output
+2026-01-15 11:47:33,935 INFO: Dry run: False
+2026-01-15 11:47:33,935 INFO: Model: gpt-4o-mini
+2026-01-15 11:47:33,935 ERROR: OPENAI_API_KEY is not set; set it in your environment or IDE run configuration.
+2026-01-15 11:55:14,499 INFO: Starting ai_inbox_triage
+2026-01-15 11:55:14,499 INFO: Input: ai_inbox_triage\sample_emails.csv
+2026-01-15 11:55:14,500 INFO: Output: output
+2026-01-15 11:55:14,501 INFO: Dry run: False
+2026-01-15 11:55:14,503 INFO: Model: gpt-4o-mini
+2026-01-15 11:55:14,503 INFO: Processing 1/10 (id=1001)
+2026-01-15 11:55:21,420 INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-15 11:55:21,444 INFO: Processing 2/10 (id=1002)
+2026-01-15 11:55:25,618 INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-15 11:55:25,637 INFO: Processing 3/10 (id=1003)
+2026-01-15 11:55:30,282 INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-15 11:55:30,299 INFO: Processing 4/10 (id=1004)
+2026-01-15 11:55:34,353 INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-15 11:55:34,372 INFO: Processing 5/10 (id=1005)
+2026-01-15 11:55:39,198 INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-15 11:55:39,211 INFO: Processing 6/10 (id=1006)
+2026-01-15 11:55:41,529 INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-15 11:55:41,552 INFO: Processing 7/10 (id=1007)
+2026-01-15 11:55:44,460 INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-15 11:55:44,480 INFO: Processing 8/10 (id=1008)
+2026-01-15 11:55:47,273 INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-15 11:55:47,290 INFO: Processing 9/10 (id=1009)
+2026-01-15 11:55:51,773 INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-15 11:55:51,790 INFO: Processing 10/10 (id=1010)
+2026-01-15 11:55:57,041 INFO: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-01-15 11:55:57,065 INFO: Wrote triaged results to output\triaged_results.csv
+2026-01-15 11:55:57,074 INFO: Appended run log to output\run_log.json
+2026-01-15 11:55:57,074 INFO: Done. Processed=10 success=10 failed=0 skipped_spam=0

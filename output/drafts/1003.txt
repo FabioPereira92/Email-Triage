@@ -1,0 +1,8 @@
+Subject: App crashes on save
+From: alice@domain.com
+Category: Bug
+Urgency: High
+Summary: The app crashes on save after creating a note on Windows 11. This issue has been experienced twice.
+
+DRAFT REPLY:
+Dear Alice, thank you for reporting the issue with the app crashing on save. We understand how frustrating this can be. Our team will investigate this problem promptly. Please provide any additional details about your environment if possible. We appreciate your patience as we work to resolve this.

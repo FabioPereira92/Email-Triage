@@ -1,0 +1,12 @@
+id,from,subject,body,date
+1001,jane.doe@example.com,Refund request - order #A123,"Hi, I was charged twice for order A123. Please refund the duplicate charge. Attached is my receipt. Thanks.",2026-01-10
+1002,bob@startup.io,Billing question,"Hello, I see a subscription charge I don't recognize. Can you tell me what it's for and how to cancel?",2026-01-11
+1003,alice@domain.com,App crashes on save,"Steps to reproduce: 1) Open app 2) Create note 3) Click save -> app freezes and closes. Happened twice on Windows 11.",2026-01-09
+1004,mike.sales@vendor.com,Interested in volume pricing,"Hi, we're evaluating your product for our team of 50. Can you share enterprise pricing and SLA details?",2026-01-08
+1005,sara@customers.com,Can't access my account,"I reset my password but the confirmation link says 'invalid token'. Email: sara@customers.com",2026-01-12
+1006,frank@user.net,Feature request: CSV export,"It would be great to have a CSV export for reports, with date and user columns. Any plans to add this?",2026-01-07
+1007,spammy@unknown.xyz,You won a prize!, "Congratulations! You've won a free iPhone. Click http://bad.example to claim.",2026-01-05
+1008,angry@client.org,Very unhappy with support,"I've been waiting 10 days and no resolution. My project is delayed and this is unacceptable. I want a manager to respond.",2026-01-06
+1009,emma@shop.com,Refund follow-up - order #B456,"I was promised a refund last week for order B456 but haven't received it. Please advise status.",2026-01-04
+1010,dev@beta.com,UI bug: misaligned buttons,"On the settings page, the Save and Cancel buttons overlap on smaller screens. Screenshot attached.",2026-01-03
+

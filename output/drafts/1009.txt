@@ -1,0 +1,8 @@
+Subject: Refund follow-up - order #B456
+From: emma@shop.com
+Category: Billing
+Urgency: High
+Summary: Emma is following up on a promised refund for order B456 that has not yet been received. She requires an update on the status of the refund.
+
+DRAFT REPLY:
+Dear Emma, thank you for reaching out. I apologize for the inconvenience regarding your refund for order B456. I will check the status immediately and provide you with an update shortly. Thank you for your patience.

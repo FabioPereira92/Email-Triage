@@ -1,0 +1,8 @@
+Subject: Feature request: CSV export
+From: frank@user.net
+Category: FeatureRequest
+Urgency: Medium
+Summary: Frank has requested a CSV export feature for reports, including date and user columns. He is inquiring about plans to implement this feature.
+
+DRAFT REPLY:
+Thank you for your suggestion regarding the CSV export feature for reports. We appreciate your input and will consider this feature in future updates. Please stay tuned for any announcements!

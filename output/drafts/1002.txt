@@ -1,0 +1,8 @@
+Subject: Billing question
+From: bob@startup.io
+Category: Billing
+Urgency: High
+Summary: The customer has a billing inquiry regarding an unrecognized subscription charge and is seeking to cancel it.
+
+DRAFT REPLY:
+Hello Bob, thank you for reaching out. I can assist you with the unrecognized subscription charge. Could you please provide me with the associated email or account details so I can look into this for you? Additionally, I can guide you on how to cancel your subscription once we clarify the charge. Looking forward to your response.

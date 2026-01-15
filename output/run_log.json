@@ -1,0 +1,15 @@
+[
+  {
+    "timestamp_utc": "2026-01-15T11:55:57.065943+00:00",
+    "input_path": "ai_inbox_triage\\sample_emails.csv",
+    "output_path": "output",
+    "model": "gpt-4o-mini",
+    "processed_count": 10,
+    "success_count": 10,
+    "failed_count": 0,
+    "skipped_spam_count": 0,
+    "dry_run": false,
+    "estimated_cost_usd": 0.008217,
+    "notes": "Real run. Cost estimate is very rough (tokens ~= chars/4; cost per 1k tokens=0.002)."
+  }
+]

@@ -1,0 +1,8 @@
+Subject: Can't access my account
+From: sara@customers.com
+Category: Account
+Urgency: High
+Summary: The customer cannot access their account due to an invalid token error after attempting to reset their password.
+
+DRAFT REPLY:
+Dear Sara, I'm sorry to hear that you're having trouble accessing your account. It seems the password reset link may be invalid. Could you please try resetting your password again? If the issue persists, let us know so we can assist you further. Thank you for your patience.

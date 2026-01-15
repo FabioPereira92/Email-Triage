@@ -1,0 +1,8 @@
+Subject: UI bug: misaligned buttons
+From: dev@beta.com
+Category: Bug
+Urgency: High
+Summary: There is a UI issue on the settings page where the Save and Cancel buttons overlap on smaller screens, as highlighted in the attached screenshot.
+
+DRAFT REPLY:
+Thank you for bringing this to our attention. We appreciate your report about the overlapping Save and Cancel buttons on smaller screens. Our team will investigate the issue and work on a solution promptly. If you have any further questions or feedback, please feel free to reach out.
