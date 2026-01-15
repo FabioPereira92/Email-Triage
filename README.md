@@ -1,81 +1,218 @@
-# Email Triage
+# 📧 AI Email Triage & Drafting Tool (CLI)
 
-Small CLI tool to triage support emails from a CSV and generate draft replies using the OpenAI API.
+A production-ready **AI-powered email triage tool** that processes support emails in bulk, classifies urgency and intent, extracts actionable insights, and generates **human-reviewable draft replies**.
 
-Features:
-- Reads CSV emails and classifies them into categories and urgencies.
-- Produces a short summary, action items, entities, and a draft reply per email.
-- Writes results to `output/triaged_results.csv`, individual drafts to `output/drafts/`, and run history to `output/run_log.json`.
-- Supports a `--dry-run` mode that generates deterministic fake responses without calling the API.
+Designed for teams that need to **handle high volumes of inbound email faster** — without sacrificing control or quality.
 
-Setup
+---
 
-1. Create and activate a Python 3.11 virtual environment:
-   - Windows (cmd):
-     python -m venv .venv
-     .venv\Scripts\activate
-   - macOS / Linux:
-     python -m venv .venv
-     source .venv/bin/activate
+## ✨ What This Tool Does
 
-2. Install dependencies:
-   pip install -r requirements.txt
+Given a CSV of incoming support emails, the tool automatically:
 
-3. Provide your OpenAI API key:
-  Create a .env file in the project root with the following content:
-    ```
-    OPENAI_API_KEY=sk-...
-    ```
-Quick examples
+- 📂 **Classifies** each email (e.g. Support, Billing, Sales, Spam)
+- 🚨 Assigns **urgency levels** (Low / Medium / High / Critical)
+- 🧠 Produces:
+  - A short **summary**
+  - **Action items**
+  - Extracted **entities** (products, dates, accounts, etc.)
+- ✉️ Generates a **draft reply** for human review (never auto-sent)
+- 🗂 Writes structured outputs for auditing, tracking, and iteration
 
-- Dry-run (no API calls):
-  python triage.py --input sample_emails.csv --dry-run
+This is a **human-in-the-loop system**: AI accelerates the work, humans stay in control.
 
-- Real run (make sure OPENAI_API_KEY is set):
-  python triage.py --input sample_emails.csv --output my_out --model gpt-4o-mini
+---
 
-Input CSV format
+## 🧠 Example Workflow
 
-Required header columns (case-sensitive): `id`, `from`, `subject`, `body`, `date`.
-Use `csv.DictReader`; rows missing required columns cause a fatal error.
+```
+Incoming Emails (CSV)
+        ↓
+AI Classification & Analysis
+        ↓
+Structured Results + Draft Replies
+        ↓
+Human Review & Send
+```
 
-Outputs
+📸 **Screenshot placeholder:**  
+*(Insert diagram or screenshot showing input CSV → output files)*
 
-- output/triaged_results.csv
-  Columns:
-    id, from, subject, category, urgency, summary, action_items, entities_json, draft_path, error
+---
 
-- output/drafts/<id>.txt
-  Each draft contains header fields and a "DRAFT REPLY:" section. Draft files are not created for Spam when `--skip-spam` is used.
+## 📊 Outputs
 
-- output/run_log.json
-  Appends a run entry with metadata and a rough cost estimate.
+### 1️⃣ `triaged_results.csv`
 
-Notes
+A structured overview suitable for dashboards or further automation.
 
-- The OpenAI API key must be set in OPENAI_API_KEY; never commit keys to source control.
-- The tool expects the model to return valid JSON only. If parsing fails once, the tool retries a single "repair" request.
-- Drafts are generated automatically but must be reviewed by a human before sending.
+**Columns include:**
+- `category`
+- `urgency`
+- `summary`
+- `action_items`
+- `entities_json`
+- `draft_path`
+- `error` (if any)
 
-Troubleshooting
+📸 **Screenshot placeholder:**  
+*(Insert screenshot of the CSV opened in Excel / Sheets)*
 
-- Invalid key / authentication error:
-  - Ensure OPENAI_API_KEY is correct and has permissions.
-  - Check network connectivity.
+---
 
-- Rate limit / API errors:
-  - Wait and retry later; the program records per-email errors and continues.
+### 2️⃣ Draft Reply Files (`output/drafts/`)
 
-- JSON parse errors:
-  - The tool retries once with a repair instruction. If parsing still fails, the error is recorded for that email.
+Each non-spam email gets its own draft file containing:
 
-Security & Privacy
+- Email metadata
+- AI analysis summary
+- **DRAFT REPLY** section (clearly marked)
 
-- Do not include sensitive personal data in the sample CSV.
-- This tool does not send emails; it only writes draft files for human review.
+📸 **Screenshot placeholder:**  
+*(Insert screenshot of a draft .txt file)*
 
-License
+---
 
-- MIT
+### 3️⃣ Run Log (`output/run_log.json`)
 
+A persistent audit trail containing:
+- Timestamp
+- Model used
+- Number of emails processed
+- Errors encountered
+- Rough cost estimate
 
+This is especially useful for **cost monitoring and compliance**.
+
+---
+
+## 🧪 Dry-Run Mode (No API Calls)
+
+For testing, demos, and CI environments, the tool supports a deterministic `--dry-run` mode:
+
+```bash
+python triage.py --input sample_emails.csv --dry-run
+```
+
+- No OpenAI API calls
+- Predictable fake outputs
+- Same file structure as real runs
+
+---
+
+## 🚀 Quick Start
+
+### 1️⃣ Environment Setup
+
+Create and activate a Python 3.11 virtual environment:
+
+```bash
+# Windows (cmd)
+python -m venv .venv
+.venv\Scripts\activate
+
+# macOS / Linux
+python -m venv .venv
+source .venv/bin/activate
+```
+
+Install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+### 2️⃣ API Key Configuration
+
+Create a `.env` file in the project root:
+
+```env
+OPENAI_API_KEY=sk-...
+```
+
+> 🔒 **Never commit API keys to source control.**
+
+---
+
+### 3️⃣ Run the Tool
+
+**Dry run (recommended first):**
+```bash
+python triage.py --input sample_emails.csv --dry-run
+```
+
+**Real run:**
+```bash
+python triage.py --input sample_emails.csv --output my_out --model gpt-4o-mini
+```
+
+---
+
+## 📥 Input Format
+
+The input must be a CSV with the following **case-sensitive headers**:
+
+```
+id, from, subject, body, date
+```
+
+- Parsed using `csv.DictReader`
+- Missing required columns cause a **fatal error**
+- Errors are recorded per email; the run continues
+
+---
+
+## 🛠 Design & Reliability Considerations
+
+- Strict JSON-only model outputs  
+- Automatic single retry with a repair instruction  
+- Deterministic dry-run mode  
+- Per-run cost visibility  
+- Human-in-the-loop by design  
+
+Drafts are **never sent automatically**.
+
+---
+
+## 🔐 Security & Privacy Notes
+
+- Do not include sensitive personal data in sample CSV files
+- This tool **does not send emails**
+- All outputs remain local to the machine
+
+---
+
+## 🤝 Disclosure: Use of AI Tools
+
+This project was developed using **ChatGPT and GitHub Copilot as productivity tools**.
+
+All system design decisions — including prompt structure, output schemas, error handling, retries, cost tracking, and human-in-the-loop safeguards — were **designed, validated, and implemented by the author**.
+
+AI tools were used to accelerate development, not replace engineering judgment.
+
+---
+
+## 💼 Freelance Use Cases
+
+- Customer support teams  
+- Shared inbox triage  
+- Pre-processing for ticketing systems  
+- Internal operations automation  
+- AI-assisted helpdesk workflows  
+
+Custom integrations (CRM, ticketing systems, internal tools) can be built on top.
+
+---
+
+## ⚠️ Disclaimer
+
+AI-generated drafts **must always be reviewed by a human** before sending.  
+This tool is designed to assist — not replace — human judgment.
+
+---
+
+## 📄 License
+
+MIT License
