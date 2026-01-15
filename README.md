@@ -35,8 +35,8 @@ Structured Results + Draft Replies
 Human Review & Send
 ```
 
-📸 **Screenshot placeholder:**  
-*(Insert diagram or screenshot showing input CSV → output files)*
+📸 **Input CSV:**  
+<img width="1363" height="322" alt="image" src="https://github.com/user-attachments/assets/2b06a548-f06f-4542-8e01-2e51040e6446" />
 
 ---
 
