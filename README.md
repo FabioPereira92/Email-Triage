@@ -22,14 +22,10 @@ Setup
    pip install -r requirements.txt
 
 3. Provide your OpenAI API key:
-   Set the OPENAI_API_KEY environment variable in your shell or in your IDE's run configuration.
-   - Windows (cmd):
-     set OPENAI_API_KEY=sk-...
-   - macOS / Linux:
-     export OPENAI_API_KEY=sk-...
-
-   Note: a .env file is optional; the script reads the environment variable directly.
-
+  Create a .env file in the project root with the following content:
+    ```
+    OPENAI_API_KEY=sk-...
+    ```
 Quick examples
 
 - Dry-run (no API calls):
